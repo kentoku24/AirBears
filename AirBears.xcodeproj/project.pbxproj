@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		151FF7C01552154E00B1038D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151FF7BF1552154E00B1038D /* CoreLocation.framework */; };
+		1D3623260D0F684500981E51 /* AirBearsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AirBearsAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		C608DAF71394C2E700412926 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		C608DAF81394C2E700412926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		C608DAF91394C2E700412926 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		C608DAFF1394C2E700412926 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C608DAFD1394C2E700412926 /* InfoPlist.strings */; };
+		C608DB021394C2E700412926 /* AirBearsTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C608DB011394C2E700412926 /* AirBearsTests.h */; };
+		C608DB041394C2E700412926 /* AirBearsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C608DB031394C2E700412926 /* AirBearsTests.m */; };
+		C608DB0A1394C31900412926 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C608DB091394C31900412926 /* SenTestingKit.framework */; };
+		C62EA601147584F40076E51F /* tutorial.mov in Resources */ = {isa = PBXBuildFile; fileRef = C62EA600147584F40076E51F /* tutorial.mov */; };
+		C62EA60514758AB70076E51F /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62EA60314758AB70076E51F /* VideoViewController.m */; };
+		C62EA60614758AB70076E51F /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62EA60414758AB70076E51F /* VideoViewController.xib */; };
+		C645294812A5A32B00D1291C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C645294512A5A32B00D1291C /* Icon.png */; };
+		C645294912A5A32B00D1291C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C645294612A5A32B00D1291C /* Icon@2x.png */; };
+		C645294A12A5A32B00D1291C /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = C645294712A5A32B00D1291C /* Icon2.png */; };
+		C6452A1712A6355900D1291C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C6452A1612A6355900D1291C /* Default.png */; };
+		C681199C129E2FBE00B96751 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C681199A129E2FBE00B96751 /* webViewController.m */; };
+		C681199D129E2FBE00B96751 /* webViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C681199B129E2FBE00B96751 /* webViewController.xib */; };
+		C68119A3129E2FD000B96751 /* settingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C68119A1129E2FD000B96751 /* settingViewController.m */; };
+		C68119A4129E2FD000B96751 /* settingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C68119A2129E2FD000B96751 /* settingViewController.xib */; };
+		C68119DA129E34B500B96751 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68119D9129E34B500B96751 /* AudioToolbox.framework */; };
+		C698EDAA1306776C002C37C3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C698EDA91306776C002C37C3 /* Reachability.m */; };
+		C698EDB813067794002C37C3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C698EDB713067794002C37C3 /* SystemConfiguration.framework */; };
+		C698EDED1306F42F002C37C3 /* pref.png in Resources */ = {isa = PBXBuildFile; fileRef = C698EDEB1306F42F002C37C3 /* pref.png */; };
+		C698EDEE1306F42F002C37C3 /* pref@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C698EDEC1306F42F002C37C3 /* pref@2x.png */; };
+		C6B28789132232D90038D07E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B28788132232D90038D07E /* iAd.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C6B7A95E139C79F900FD26A2 /* Statics.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B7A95D139C79F900FD26A2 /* Statics.plist */; };
+		C6D9ED9F129EF8C2000B5C53 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9ED9D129EF8C2000B5C53 /* info.png */; };
+		C6D9EDA0129EF8C2000B5C53 /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C6D9ED9E129EF8C2000B5C53 /* info@2x.png */; };
+		C6D9EDA6129F00D3000B5C53 /* ping.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6D9EDA5129F00D3000B5C53 /* ping.wav */; };
+		C6E5CB671474AC8400CBB7D5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E5CB661474AC8400CBB7D5 /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		151FF7BF1552154E00B1038D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AirBearsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirBearsAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AirBearsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirBearsAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* AirBears.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBears.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* AirBears_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirBears_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* AirBears-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AirBears-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C608DAF61394C2E700412926 /* AirBearsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirBearsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C608DAFC1394C2E700412926 /* AirBearsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirBearsTests-Info.plist"; sourceTree = "<group>"; };
+		C608DAFE1394C2E700412926 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C608DB001394C2E700412926 /* AirBearsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirBearsTests-Prefix.pch"; sourceTree = "<group>"; };
+		C608DB011394C2E700412926 /* AirBearsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirBearsTests.h; sourceTree = "<group>"; };
+		C608DB031394C2E700412926 /* AirBearsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirBearsTests.m; sourceTree = "<group>"; };
+		C608DB091394C31900412926 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SenTestingKit.framework; sourceTree = "<group>"; };
+		C62EA600147584F40076E51F /* tutorial.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tutorial.mov; sourceTree = "<group>"; };
+		C62EA60214758AB70076E51F /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		C62EA60314758AB70076E51F /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		C62EA60414758AB70076E51F /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VideoViewController.xib; path = Classes/VideoViewController.xib; sourceTree = "<group>"; };
+		C645294512A5A32B00D1291C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C645294612A5A32B00D1291C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C645294712A5A32B00D1291C /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2.png; sourceTree = "<group>"; };
+		C6452A1612A6355900D1291C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C6811999129E2FBE00B96751 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = webViewController.h; path = ../webViewController.h; sourceTree = "<group>"; };
+		C681199A129E2FBE00B96751 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = webViewController.m; path = ../webViewController.m; sourceTree = "<group>"; };
+		C681199B129E2FBE00B96751 /* webViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = webViewController.xib; sourceTree = "<group>"; };
+		C68119A0129E2FD000B96751 /* settingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingViewController.h; sourceTree = "<group>"; };
+		C68119A1129E2FD000B96751 /* settingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingViewController.m; sourceTree = "<group>"; };
+		C68119A2129E2FD000B96751 /* settingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = settingViewController.xib; path = Classes/settingViewController.xib; sourceTree = "<group>"; };
+		C68119D9129E34B500B96751 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C698EDA81306776C002C37C3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C698EDA91306776C002C37C3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C698EDB713067794002C37C3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C698EDEB1306F42F002C37C3 /* pref.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pref.png; sourceTree = "<group>"; };
+		C698EDEC1306F42F002C37C3 /* pref@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pref@2x.png"; sourceTree = "<group>"; };
+		C6B28788132232D90038D07E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C6B7A95D139C79F900FD26A2 /* Statics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Statics.plist; sourceTree = "<group>"; };
+		C6D9ED9D129EF8C2000B5C53 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		C6D9ED9E129EF8C2000B5C53 /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		C6D9EDA5129F00D3000B5C53 /* ping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ping.wav; sourceTree = "<group>"; };
+		C6E5CB661474AC8400CBB7D5 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151FF7C01552154E00B1038D /* CoreLocation.framework in Frameworks */,
+				C6E5CB671474AC8400CBB7D5 /* MediaPlayer.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				C68119DA129E34B500B96751 /* AudioToolbox.framework in Frameworks */,
+				C698EDB813067794002C37C3 /* SystemConfiguration.framework in Frameworks */,
+				C6B28789132232D90038D07E /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C608DAF21394C2E700412926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C608DAF71394C2E700412926 /* UIKit.framework in Frameworks */,
+				C608DAF81394C2E700412926 /* Foundation.framework in Frameworks */,
+				C608DAF91394C2E700412926 /* CoreGraphics.framework in Frameworks */,
+				C608DB0A1394C31900412926 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C6811999129E2FBE00B96751 /* webViewController.h */,
+				C681199A129E2FBE00B96751 /* webViewController.m */,
+				C68119A0129E2FD000B96751 /* settingViewController.h */,
+				C68119A1129E2FD000B96751 /* settingViewController.m */,
+				C698EDA81306776C002C37C3 /* Reachability.h */,
+				C698EDA91306776C002C37C3 /* Reachability.m */,
+				1D3623240D0F684500981E51 /* AirBearsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* AirBearsAppDelegate.m */,
+				C62EA60214758AB70076E51F /* VideoViewController.h */,
+				C62EA60314758AB70076E51F /* VideoViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* AirBears.app */,
+				C608DAF61394C2E700412926 /* AirBearsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				C608DAFA1394C2E700412926 /* AirBearsTests */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* AirBears_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C62EA60414758AB70076E51F /* VideoViewController.xib */,
+				C681199B129E2FBE00B96751 /* webViewController.xib */,
+				C68119A2129E2FD000B96751 /* settingViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* AirBears-Info.plist */,
+				C6B7A95D139C79F900FD26A2 /* Statics.plist */,
+				C6D9EDA9129F00FC000B5C53 /* Images */,
+				C6D9EDA8129F00ED000B5C53 /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				151FF7BF1552154E00B1038D /* CoreLocation.framework */,
+				C6E5CB661474AC8400CBB7D5 /* MediaPlayer.framework */,
+				C608DB091394C31900412926 /* SenTestingKit.framework */,
+				C698EDB713067794002C37C3 /* SystemConfiguration.framework */,
+				C68119D9129E34B500B96751 /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				C6B28788132232D90038D07E /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C608DAFA1394C2E700412926 /* AirBearsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C608DB011394C2E700412926 /* AirBearsTests.h */,
+				C608DB031394C2E700412926 /* AirBearsTests.m */,
+				C608DAFB1394C2E700412926 /* Supporting Files */,
+			);
+			path = AirBearsTests;
+			sourceTree = "<group>";
+		};
+		C608DAFB1394C2E700412926 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C608DAFC1394C2E700412926 /* AirBearsTests-Info.plist */,
+				C608DAFD1394C2E700412926 /* InfoPlist.strings */,
+				C608DB001394C2E700412926 /* AirBearsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6D9EDA8129F00ED000B5C53 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9EDA5129F00D3000B5C53 /* ping.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		C6D9EDA9129F00FC000B5C53 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C62EA600147584F40076E51F /* tutorial.mov */,
+				C6452A1612A6355900D1291C /* Default.png */,
+				C645294512A5A32B00D1291C /* Icon.png */,
+				C645294612A5A32B00D1291C /* Icon@2x.png */,
+				C645294712A5A32B00D1291C /* Icon2.png */,
+				C6D9ED9D129EF8C2000B5C53 /* info.png */,
+				C6D9ED9E129EF8C2000B5C53 /* info@2x.png */,
+				C698EDEB1306F42F002C37C3 /* pref.png */,
+				C698EDEC1306F42F002C37C3 /* pref@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* AirBears */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AirBears" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBears;
+			productName = AirBears;
+			productReference = 1D6058910D05DD3D006BFB54 /* AirBears.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C608DAF51394C2E700412926 /* AirBearsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C608DB081394C2E700412926 /* Build configuration list for PBXNativeTarget "AirBearsTests" */;
+			buildPhases = (
+				C608DAF11394C2E700412926 /* Sources */,
+				C608DAF21394C2E700412926 /* Frameworks */,
+				C608DAF31394C2E700412926 /* Resources */,
+				C608DAF41394C2E700412926 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirBearsTests;
+			productName = AirBearsTests;
+			productReference = C608DAF61394C2E700412926 /* AirBearsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AirBears" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* AirBears */,
+				C608DAF51394C2E700412926 /* AirBearsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				C681199D129E2FBE00B96751 /* webViewController.xib in Resources */,
+				C68119A4129E2FD000B96751 /* settingViewController.xib in Resources */,
+				C6D9ED9F129EF8C2000B5C53 /* info.png in Resources */,
+				C6D9EDA0129EF8C2000B5C53 /* info@2x.png in Resources */,
+				C6D9EDA6129F00D3000B5C53 /* ping.wav in Resources */,
+				C645294812A5A32B00D1291C /* Icon.png in Resources */,
+				C645294912A5A32B00D1291C /* Icon@2x.png in Resources */,
+				C645294A12A5A32B00D1291C /* Icon2.png in Resources */,
+				C6452A1712A6355900D1291C /* Default.png in Resources */,
+				C698EDED1306F42F002C37C3 /* pref.png in Resources */,
+				C698EDEE1306F42F002C37C3 /* pref@2x.png in Resources */,
+				C6B7A95E139C79F900FD26A2 /* Statics.plist in Resources */,
+				C62EA601147584F40076E51F /* tutorial.mov in Resources */,
+				C62EA60614758AB70076E51F /* VideoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C608DAF31394C2E700412926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C608DAFF1394C2E700412926 /* InfoPlist.strings in Resources */,
+				C608DB021394C2E700412926 /* AirBearsTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C608DAF41394C2E700412926 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AirBearsAppDelegate.m in Sources */,
+				C681199C129E2FBE00B96751 /* webViewController.m in Sources */,
+				C68119A3129E2FD000B96751 /* settingViewController.m in Sources */,
+				C698EDAA1306776C002C37C3 /* Reachability.m in Sources */,
+				C62EA60514758AB70076E51F /* VideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C608DAF11394C2E700412926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C608DB041394C2E700412926 /* AirBearsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C608DAFD1394C2E700412926 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C608DAFE1394C2E700412926 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AirBears_Prefix.pch;
+				INFOPLIST_FILE = "AirBears-Info.plist";
+				PRODUCT_NAME = AirBears;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AirBears_Prefix.pch;
+				INFOPLIST_FILE = "AirBears-Info.plist";
+				PRODUCT_NAME = AirBears;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C608DB051394C2E700412926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirBearsTests/AirBearsTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AirBearsTests/AirBearsTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C608DB061394C2E700412926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirBearsTests/AirBearsTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AirBearsTests/AirBearsTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		C608DB071394C2E700412926 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirBearsTests/AirBearsTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AirBearsTests/AirBearsTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+		C645297012A5A94300D1291C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Distribution;
+		};
+		C645297112A5A94300D1291C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AirBears_Prefix.pch;
+				INFOPLIST_FILE = "AirBears-Info.plist";
+				PRODUCT_NAME = AirBears;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AirBears" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				C645297112A5A94300D1291C /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AirBears" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				C645297012A5A94300D1291C /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		C608DB081394C2E700412926 /* Build configuration list for PBXNativeTarget "AirBearsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C608DB051394C2E700412926 /* Debug */,
+				C608DB061394C2E700412926 /* Release */,
+				C608DB071394C2E700412926 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

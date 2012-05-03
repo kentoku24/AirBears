@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AirBearsStartPageURL</key>
+	<string></string>
+	<key>AirBearsLoginPageURL</key>
+	<string></string>
+	<key>AirBearsGoalPageURL</key>
+	<string></string>
+	<key>TeleBearsStartPageURL</key>
+	<string></string>
+	<key>TeleBearsLoginPageURL</key>
+	<string></string>
+	<key>TeleBearsGoalPageURL</key>
+	<string></string>
+</dict>
+</plist>

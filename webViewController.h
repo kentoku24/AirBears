@@ -14,8 +14,8 @@
 #import "Reachability.h"
 @class Reachability;
 
-const double THRESH = 50.0;
-const int    COUNTMAX = 4;
+const double THRESH = 20.0;
+const int    COUNTMAX = 3;
 
 @interface webViewController : UIViewController <UIWebViewDelegate, ADBannerViewDelegate> {
 	IBOutlet UIWebView *WebView;

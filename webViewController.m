@@ -561,6 +561,7 @@
     }
     //calculate distance from last time
     
+    //NSLog(@"dist=%f, THRESH=%f",dist,THRESH);
     if (dist > THRESH) {
         NSLog(@"more than THRESH, send notification and update last location.");
         [lastDate release];
@@ -568,8 +569,9 @@
         [lastLocation release];
         lastLocation = [[locationManager location] retain];
         
-        /*
+        
         //from here just getting current time
+        /*
         NSDate *fireTime = [NSDate date];
         NSLog(@"FireTime = %@", [fireTime description]);
         //set up the notifier
@@ -583,8 +585,10 @@
         NSDictionary *dict = [NSDictionary dictionaryWithObject:@"obj" forKey: @"key" ];
         localNotification.userInfo = dict;
         //notification is disabled since FULL backgrounding is WAAAAAY better
-        //[[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
-        [localNotification release];*/
+         
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+        [localNotification release];
+         */
         
         //I don't want to deploy multiply notification since user is ignoring it
         allowedToDeployNotification = NO;
